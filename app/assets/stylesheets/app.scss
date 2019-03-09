@@ -1,0 +1,84 @@
+$green: #16a085;
+$grey: #5A6576;
+$other-grey:#E7ECEE;
+$blue:#058CC5;
+$red: #D2527F;
+$light-blue:#3498DB;
+
+.white{
+	background-color:white;
+}
+.white-text{
+	color:white;
+}
+
+.green{
+	background-color:$green;
+}
+.green-text{
+	color:$green;
+}
+
+.blue{
+	background-color:$blue;
+}	
+
+.blue-text{
+	color:$blue;
+}
+
+.grey{
+	background-color:$grey;
+}	
+
+.grey-text{
+	color:$blue;
+}
+
+
+.other-grey{
+	background-color:$other-grey;
+}	
+
+.other-grey-text{
+	color:$other-grey;
+}	
+.red{
+	background-color:$red;
+}	
+
+.red-text{
+	color:$red;
+}
+
+.light-blue{
+	background-color:$light-blue;
+}	
+
+.light-blue-text{
+	color:$light-blue;
+}
+
+.big-padding{
+	padding:2em;
+}
+
+.no-float{
+	float: none !important;
+}
+
+.no-padding{
+	padding:0;
+}
+
+.inline-block{
+	float:none !important;
+	display:inline-block;
+	vertical-align:middle;
+}
+.ultra-big{
+	font-size:7em;
+}
+.tall-padding{
+	padding: 10px 5px
+}

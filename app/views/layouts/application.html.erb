@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Site</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'landing', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
+  </head> 
+  <body>
+    <!-- <div class="blue white-text large-padding bold text-center">
+      <p class="no-padding notice-margin"><%= notice %><%= alert %>Hola mundo</p>
+      <span class="pull-right close-parent">X</span>
+      <div style="clear: both"></div>
+    </div> -->
+     <div class="blue white-text large-padding bold text-center ok" style="<%="display: none;" if alert.nil? && notice.nil?%>">
+      <p class="no-padding notice-margin">
+        <%= notice %><%= alert %>
+        <span class="pull-right close-parent">x</span>
+         
+        
+      </p>
+    </div>
+
+    <%= render "partials/nav" %>
+    <div class="col-md-11 no-float center-block">
+      <%= yield %>
+    </div>
+  </body>
+</html>
